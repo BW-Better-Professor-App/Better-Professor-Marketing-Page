@@ -1,0 +1,57 @@
+.top {
+  .flex(space-between);
+  padding-top: 20px;
+  background-image: url("../../img/banner.jpg");
+
+  @media @mobile { 
+    display: block;
+    text-align: center; 
+  }
+
+   img {
+     width: 160px;
+     height: 100px;
+     padding: 10px 0 0 20px;
+   }
+}
+
+.flex(@justify){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: @justify;
+  }
+
+
+.btn {
+  appearance: none;
+  background-color: transparent;
+  box-shadow: 0 0 0 2px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.3rem;
+  height: 3.5rem;
+  letter-spacing: 0.25rem;
+  line-height: 3.5rem;
+  padding: 0 1.75rem;
+  text-align: center;
+  text-decoration: none;
+      
+    &:hover {
+      color: darken(@button-bg, 20%);
+    }
+  }  
+  
+  .textTitle(){
+    font-size: 3rem;
+    padding-bottom: 10px;
+    color: @white; 
+    text-decoration: none;
+    border-bottom: 3px solid white;
+
+    &:hover {
+      color: lighten(@font-color, 20%);
+    }
+  }
+
+  

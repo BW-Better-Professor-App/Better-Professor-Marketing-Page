@@ -1,0 +1,72 @@
+
+	
+.about {
+
+  header {
+    .top();
+  }
+  
+    #content-top {
+      align-items: center;
+      background-image: url("../../img/banner.jpg");
+      display: flex;
+      padding-left: 5vw;
+      height: 30vh;
+      position: relative;
+         
+        h1 {
+        font-size: 4em;
+        padding-bottom: 10px;
+        border-bottom: 1px solid white;
+        }
+      }
+  
+    .content-section {
+      padding: 50px 0 20px 0;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+                 
+          @media @mobile {  
+            display: flex;
+            flex-direction: column-reverse;    
+          }    
+    
+        .text-content {
+          width: 50%;
+          padding-left: 2%;
+              
+            @media @mobile {      
+              width: 100%;
+              text-align: center;
+            }
+         } 
+
+        .face {
+           @media @mobile {  
+              text-align: center;
+            }
+        
+           img {
+              width: 180px;
+              height: 180px;
+              border-radius: 50%;
+              padding-left: 5%;
+
+                @media @mobile { 
+                    width: 40%; 
+                    height: 40%;        
+                    padding: 10px 0 10px 10px;
+                }
+            }
+          }
+        }
+     
+      .inverse-content {
+        
+        @media @mobile {  
+          display: block; 
+          
+        }
+      }
+}  
